@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/index.css">
+
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/checke.js"></script>
+  <script src="js/dialog.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/iscroll.js"></script>
+	<script src="js/result.js"></script>
+</head>
+<body>
+	<div class="li_container" ng-app="myApp" ng-init="flag=false">
+
+		<div ng-view class="views"></div>
+
+	</div>
+		<script>
+	    var app=angular.module("myApp",["ngRoute"]);
+	    	app.config(['$routeProvider',function($routeProvider){
+	    		$routeProvider
+	    		.otherwise({redirectTo:'/page1'})
+	    		.when('/page2',{
+	    			templateUrl:'pages/page2.html'
+	    		})
+	    		.when("/page1",{
+	    			templateUrl:'pages/page1.html'
+	    		})
+	    		.when("/page3",{
+	    			templateUrl:'pages/page3.html'
+	    		})
+	    		.when("/page4",{
+	    			templateUrl:'pages/page4.html'
+	    		})
+	    		.when("/page5",{
+	    			templateUrl:'pages/page5.html'
+	    		})
+	    		.when("/page6",{
+	    			templateUrl:'pages/page6.html'
+	    		})
+	    		.when("/page7",{
+	    			templateUrl:'pages/page7.html',
+	    			controller:abc
+	    		})
+	    	}]);
+		app.controller('customersCtrl1', function($scope, $http) {
+       $http.get("json/sock.json")
+   		 .success(function(data) {
+  
+   		 //console.log(data.result[0].sock);
+   		 var data=data.result[2].sock;
+   		 var str="";
+   		 data.forEach(function(value,index){
+   		 	console.log(value);
+   		 	str+='<li>'+value+'</li>'
+   		 })
+
+   		 $("#ul1").html(str);
+   		 	$scope.have=function(){
+   		 		$scope.flag=false;
+   		 	}
+   		 	$scope.none=function(){
+   		 		$scope.flag=true;
+   		 	}
+
+   		 $scope.fun=(function($scope){
+   		 	$(".cao_ul").on("click","li",function(){
+				      if($(this).is(".reset")){
+                   $(this).removeClass('reset');
+              }else{
+                  $(this).addClass('reset');
+              }
+
+				
+			})
+   		 })()
+
+   	});
+});
+app.controller('customersCtrl2', function($scope, $http) {
+       $http.get("json/sock.json")
+   		 .success(function(data) {
+   		 	
+   		 console.log(data.result[0].sock);
+   		 var data=data.result[0].sock;
+   		 var str="";
+   		 data.forEach(function(value,index){
+   		 	console.log(value);
+   		 	str+='<li><label for="li">'+value+'</label></li>'
+   		 })
+   		 $(".ul").html(str)
+   		 $scope.have=function(){
+   		 		$scope.flag=false;
+   		 	}
+   		 	$scope.none=function(){
+   		 		$scope.flag=true;
+   		 	}
+   		 	 $scope.fun=(function($scope){
+   		 	$(".cao_ul").on("click","li",function(){
+				                  if($(this).is(".reset")){
+                               $(this).removeClass('reset');
+                          }else{
+                              $(this).addClass('reset');
+                          }
+
+			})
+   		 })()
+   	});
+});
+ app.controller('customersCtrl3', function($scope, $http) {
+       $http.get("json/sock.json")
+   		 .success(function(data) {
+   		 	
+   		 console.log(data.result[0].sock);
+   		 var data=data.result[1].sock;
+   		 var str="";
+   		 data.forEach(function(value,index){
+   		 	console.log(value);
+   		 	str+='<li><input type="checkbox" id="li"><label for="li">'+value+'</label></li>'
+   		 })
+   		 $("#ul").html(str)
+
+   	});
+       $scope.dialog=function($scope){
+          alert(0)
+       }
+       /*$("#btn").on("click",function(){
+             $.dialog({
+                  //msg:"",
+                  //btn:['确定',"取消"],
+                  //callback1:function(){
+                      //del.remove();
+                  //}
+            })
+            
+       })*/
+});
+ function abc(){
+ 	init();
+ }
+ app.controller('customersCtrl3', function($scope, $http) {
+       $http.get("json/sock.json")
+   		 .success(function(data) {
+   		 	
+   		 console.log(data.result[0].sock);
+   		 var data=data.result[1].sock;
+   		 var str="";
+   		 data.forEach(function(value,index){
+   		 	console.log(value);
+   		 	str+='<li><input type="checkbox" id="li"><label for="li">'+value+'</label></li>'
+   		 })
+   		 $("#ul").html(str)
+
+   	});
+});
+ 
+app.controller("mycontrol",function($scope,$http){	
+	$http.get("json/question.json")
+    .success(function(reponse){
+    	console.log(reponse.result[0].question[0].val);    																
+    	$scope.names=reponse.result[0].question;
+    	$scope.n=reponse.result;
+    	console.log(reponse.result)
+    	$scope.fun=(function($scope){
+   		 	$(".cao_ul2").on("click","li",function(){
+				$(this).addClass('reset');
+				$(this).siblings().removeClass('reset');
+			})
+   		})
+    	
+    });
+})
+
+
+
+
+</script>
+
+	
+</body>
+</html>

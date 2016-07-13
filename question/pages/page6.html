@@ -1,0 +1,24 @@
+
+<div class="xie_feelList" ng-controller="mycontrol">
+		<div class="xie_feel">
+			<ul class="xie_feelMain">
+				<li class="xie_mainList" >
+					<div class="xie_opation"ng-repeat='x in names'>
+						<p>{{x.val}}</p>
+						<ul ng-click="fun()" class="cao_ul2">
+							<li>没有</li>
+							<li>很少</li>
+							<li>有时</li>
+							<li>经常</li>
+							<li>总是</li>
+						</ul>
+					</div>
+				</li>
+
+			</ul>
+			<div class="xie_bottom">
+				<div class="xie_btn"><a href="#/page7">下一页</a></div>
+			</div>
+		</div>
+</div>
+

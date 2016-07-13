@@ -1,0 +1,613 @@
+/* line 1, index.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* line 6, index.scss */
+.views {
+  width: 100%;
+  height: 100%; }
+
+/* line 10, index.scss */
+html, body, .li_container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+/* line 15, index.scss */
+a {
+  text-decoration: none; }
+
+/* line 18, index.scss */
+.li_container {
+  position: relative; }
+
+/* header */
+/* line 22, index.scss */
+.li_header {
+  width: 100%;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #fff; }
+  /* line 30, index.scss */
+  .li_header h4 {
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px; }
+  /* line 35, index.scss */
+  .li_header .back {
+    width: 13px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 10px; }
+
+/* section */
+/* line 45, index.scss */
+.li_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 30px; }
+  /* line 52, index.scss */
+  .li_bottom small {
+    text-align: center;
+    line-height: 30px;
+    font-size: 8px;
+    display: block; }
+
+/* line 59, index.scss */
+.li_section {
+  width: 100%;
+  height: 100%;
+  background: #f6514b;
+  position: relative; }
+  /* line 65, index.scss */
+  .li_section .bg {
+    width: 100%;
+    height: 142px;
+    position: absolute;
+    bottom: 45px; }
+  /* line 71, index.scss */
+  .li_section .bg2 {
+    width: 320px;
+    height: 320px;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0px; }
+  /* line 78, index.scss */
+  .li_section .pic1 {
+    width: 244px;
+    height: 96px;
+    position: absolute;
+    top: 33px;
+    left: 38px; }
+  /* line 85, index.scss */
+  .li_section .pic2 {
+    width: 82px;
+    height: 25px;
+    position: absolute;
+    top: 34px;
+    left: 27px; }
+  /* line 92, index.scss */
+  .li_section .pic3 {
+    width: 21px;
+    height: 20px;
+    position: absolute;
+    top: 104px;
+    right: 28px; }
+  /* line 99, index.scss */
+  .li_section .pic4 {
+    width: 73px;
+    height: 18px;
+    position: absolute;
+    top: 50px;
+    right: 36px; }
+  /* line 106, index.scss */
+  .li_section .pic5 {
+    width: 75%;
+    height: 59%;
+    position: absolute;
+    top: 50%;
+    margin-top: -50%;
+    left: 50%;
+    margin-left: -38%; }
+  /* line 115, index.scss */
+  .li_section .button {
+    background: url(../img/btn_bg.png);
+    position: absolute;
+    background-size: 100% 100%;
+    bottom: 20%;
+    left: 36%;
+    width: 35%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold; }
+    /* line 126, index.scss */
+    .li_section .button a {
+      color: #bd0b05;
+      font-size: 23px; }
+  /* line 131, index.scss */
+  .li_section button {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    width: 100px;
+    height: 40px;
+    margin-left: -50px; }
+
+/* line 141, index.scss */
+a {
+  color: #bd0b05;
+  font-size: 23px; }
+
+/* page */
+/* line 146, index.scss */
+.page1 {
+  width: 100%;
+  height: 100%;
+  z-index: 9; }
+
+/* line 151, index.scss */
+.center1 {
+  width: 100%;
+  height: 100%;
+  margin-top: 45px; }
+
+/*-------------------page5----------------------*/
+/* line 157, index.scss */
+ul, li {
+  list-style: none; }
+
+/* line 163, index.scss */
+.box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #f6514b; }
+  /* line 168, index.scss */
+  .box .section1 {
+    background: url(../img/main_bg.png);
+    width: 277px;
+    height: 375px;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 100px;
+    left: 20px; }
+    /* line 177, index.scss */
+    .box .section1 h3 {
+      color: #b00600;
+      text-align: center;
+      font-size: 20px;
+      margin-top: 30px; }
+    /* line 183, index.scss */
+    .box .section1 .cao_ul2 {
+      margin: 0 auto;
+      width: 80%;
+      height: 70%;
+      margin-top: 8%; }
+      /* line 188, index.scss */
+      .box .section1 .cao_ul2 li {
+        float: left;
+        width: 40%;
+        margin-left: 10%;
+        height: 45px;
+        position: relative; }
+        /* line 194, index.scss */
+        .box .section1 .cao_ul2 li label {
+          margin-left: 10px; }
+    /* line 199, index.scss */
+    .box .section1 .btn {
+      position: absolute;
+      left: 27%;
+      bottom: 10%;
+      background: url(../img/btn_bg.png);
+      background-size: 100% 100%;
+      width: 110px;
+      height: 40px;
+      color: #b00600;
+      font-weight: 900;
+      font-size: 20px;
+      text-align: center;
+      line-height: 40px; }
+    /* line 213, index.scss */
+    .box .section1 .greens {
+      width: 90px;
+      height: 75px;
+      background: url(../img/ii.png);
+      background-size: 100% 100%;
+      position: absolute;
+      left: -10%;
+      bottom: -7%; }
+
+/*--------------------page3------------------------*/
+/* line 225, index.scss */
+.content {
+  width: 100%;
+  height: 200px; }
+  /* line 228, index.scss */
+  .content p {
+    height: 50px; }
+
+/* line 232, index.scss */
+.checkbox11 {
+  line-height: 50px;
+  float: left;
+  text-align: center;
+  width: 50%;
+  padding-left: 14px;
+  position: relative; }
+  /* line 239, index.scss */
+  .checkbox11 label {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url(../img/icon_check.png) no-repeat left;
+    background-size: contain; }
+  /* line 246, index.scss */
+  .checkbox11 input {
+    position: absolute;
+    opacity: 0;
+    top: 40%; }
+    /* line 251, index.scss */
+    .checkbox11 input:checked + label {
+      background: url(../img/icon_checked.png) no-repeat left;
+      background-size: contain; }
+
+/* line 258, index.scss */
+.cao_ul {
+  border: 3px solid #E9DDAD;
+  display: block;
+  width: 85%;
+  height: 150px;
+  margin-left: 20px;
+  border-radius: 5px;
+  position: relative; }
+  /* line 267, index.scss */
+  .cao_ul:after {
+    content: "";
+    border-top: 2px solid #E9DDAD;
+    border-left: 2px solid #E9DDAD;
+    -webkit-transform: rotate(45deg);
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    right: 42px;
+    width: 15px;
+    height: 15px;
+    background: #fff3bf; }
+  /* line 280, index.scss */
+  .cao_ul li {
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: 9px;
+    padding: 3px;
+    width: 29%;
+    text-align: center;
+    z-index: 999; }
+
+/* line 292, index.scss */
+.reset {
+  background: #f6514b;
+  border-color: #f6514b;
+  color: #fff; }
+
+/*--------------------page6---------------------*/
+/* line 299, index.scss */
+.xie_feelList {
+  width: 100%;
+  height: 100%;
+  background: #f6514b;
+  padding: 10px;
+  font-size: 14px;
+  /*-------bottom------*/ }
+  /* line 305, index.scss */
+  .xie_feelList .xie_feel {
+    width: 100%;
+    height: 100%;
+    background: url(../img/main_bg.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 14px 16px;
+    display: -webkit-flex;
+    -webkit-flex-direction: column; }
+  /* line 314, index.scss */
+  .xie_feelList .xie_feelMain {
+    -webkit-flex: 1;
+    width: 100%;
+    position: relative;
+    overflow: hidden; }
+    /* line 319, index.scss */
+    .xie_feelList .xie_feelMain .xie_mainList {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: #fff3bf; }
+    /* line 327, index.scss */
+    .xie_feelList .xie_feelMain .xie_opation {
+      width: 100%;
+      min-height: 48px;
+      padding: 13px 0; }
+      /* line 331, index.scss */
+      .xie_feelList .xie_feelMain .xie_opation p {
+        width: 100%;
+        min-height: 23px;
+        line-height: 23px;
+        color: #333; }
+        /* line 336, index.scss */
+        .xie_feelList .xie_feelMain .xie_opation p:before {
+          content: "";
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          background: url(../img/icon.png) no-repeat;
+          background-size: 100% 100%;
+          margin-right: 6px; }
+      /* line 346, index.scss */
+      .xie_feelList .xie_feelMain .xie_opation ul {
+        width: 100%;
+        height: 21px;
+        margin-top: 5px;
+        display: -webkit-flex; }
+      /* line 352, index.scss */
+      .xie_feelList .xie_feelMain .xie_opation li {
+        -webkit-flex: 1;
+        height: 23px;
+        border: 1px solid #666;
+        border-radius: 3px;
+        line-height: 23px;
+        text-align: center;
+        font-size: 12px;
+        box-sizing: border-box;
+        margin-right: 12px;
+        color: #666; }
+        /* line 353, index.scss */
+        .xie_feelList .xie_feelMain .xie_opation li.reset {
+          background: #f6514b;
+          border-color: #f6514b;
+          color: #fff; }
+        /* line 368, index.scss */
+        .xie_feelList .xie_feelMain .xie_opation li:last-child {
+          margin: 0; }
+        /* line 371, index.scss */
+        .xie_feelList .xie_feelMain .xie_opation li.chosiceBg {
+          border-color: #f6514b;
+          background: #f6514b;
+          color: #fff; }
+  /* line 381, index.scss */
+  .xie_feelList .xie_bottom {
+    width: 100%;
+    height: 32px;
+    margin-top: 10px; }
+    /* line 385, index.scss */
+    .xie_feelList .xie_bottom .xie_btn {
+      width: 88px;
+      height: 32px;
+      background: url(../img/btn_bg.png) no-repeat;
+      background-size: 100% 100%;
+      text-align: center;
+      line-height: 32px;
+      margin: 0 auto;
+      font-size: 16px;
+      font-weight: bolder;
+      color: #b00600; }
+
+/*-----------------------page7---------------------*/
+/* line 411, index.scss */
+html, body, .container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+/* line 415, index.scss */
+.container {
+  background: white; }
+
+/* line 419, index.scss */
+.title {
+  width: 100%;
+  height: 44px;
+  font-size: 16px;
+  color: black;
+  line-height: 44px;
+  text-align: center; }
+
+/* line 428, index.scss */
+.habitus {
+  width: 100%;
+  height: 120px;
+  padding: 25px 0 0 22px;
+  background: url(../img/arrow_right.png) no-repeat 95% center, #F6514B;
+  background-size: 9px 11px; }
+  /* line 434, index.scss */
+  .habitus .p {
+    width: 100%;
+    height: 12px;
+    font-size: 12px;
+    color: white; }
+  /* line 440, index.scss */
+  .habitus .habitus_type {
+    width: 100%;
+    height: 16px;
+    font-size: 16px;
+    color: white;
+    margin-top: 5px; }
+  /* line 447, index.scss */
+  .habitus .habitus_trait {
+    width: 210px;
+    height: 16px;
+    font-size: 12px;
+    color: #FFC5C3;
+    line-height: 16px;
+    margin-top: 5px; }
+
+/* line 457, index.scss */
+.habitus_details {
+  width: 100%;
+  padding: 20px 27px 0 24px; }
+  /* line 460, index.scss */
+  .habitus_details section {
+    width: 100%;
+    display: -webkit-flex; }
+    /* line 463, index.scss */
+    .habitus_details section p {
+      font-size: 12px;
+      color: #333;
+      line-height: 17px; }
+    /* line 468, index.scss */
+    .habitus_details section p:nth-child(1) {
+      padding-right: 5px; }
+    /* line 471, index.scss */
+    .habitus_details section p:nth-child(2) {
+      -webkit-flex: 1; }
+
+/* line 477, index.scss */
+.unfold {
+  width: 100%;
+  height: 43px;
+  background: url(../img/small_arrow_down.png) no-repeat 63% center, white;
+  background-size: 10px 5px;
+  font-size: 12px;
+  color: #333;
+  line-height: 43px;
+  text-align: center;
+  display: none; }
+
+/* line 489, index.scss */
+.surplus_content {
+  width: 100%;
+  padding: 0 26px 0 23px; }
+
+/* line 494, index.scss */
+.details_item {
+  width: 100%; }
+  /* line 496, index.scss */
+  .details_item h6 {
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    color: #333;
+    line-height: 30px;
+    padding-left: 13px;
+    background: url(../img/icon.png) no-repeat left center;
+    background-size: 8px 8px; }
+  /* line 506, index.scss */
+  .details_item ul {
+    width: 100%; }
+    /* line 508, index.scss */
+    .details_item ul li {
+      width: 100%;
+      font-size: 12px;
+      color: #333;
+      line-height: 18px;
+      padding-left: 11px;
+      background: url(../img/circle.gif) no-repeat 1px 7px;
+      background-size: 4px 4px; }
+
+/* line 520, index.scss */
+.empty {
+  width: 100%;
+  height: 15px;
+  background: #FBFBFB; }
+
+/* line 526, index.scss */
+.suit_food, .unsuited_food {
+  width: 100%;
+  height: 44px;
+  padding-left: 20px;
+  border-top: 1px solid #EEEEEE;
+  font-size: 15px;
+  color: #F6514B;
+  line-height: 44px;
+  background: url(../img/arrow_down.png) no-repeat 95% center;
+  background-size: 16px 9px; }
+
+/* line 538, index.scss */
+.unsuited_food {
+  border-bottom: 1px solid #EEEEEE; }
+
+/* line 542, index.scss */
+.suit_food_details, .unsuited_food_details {
+  width: 100%;
+  padding: 0 15px;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap; }
+  /* line 547, index.scss */
+  .suit_food_details div, .unsuited_food_details div {
+    width: 48%; }
+    /* line 549, index.scss */
+    .suit_food_details div img, .unsuited_food_details div img {
+      width: 100%;
+      height: 100%; }
+    /* line 553, index.scss */
+    .suit_food_details div p, .unsuited_food_details div p {
+      width: 100%;
+      height: 36px;
+      font-size: 14px;
+      color: #333;
+      line-height: 36px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+  /* line 564, index.scss */
+  .suit_food_details div:nth-child(2n), .unsuited_food_details div:nth-child(2n) {
+    margin-left: 4%; }
+
+/* line 569, index.scss */
+.hide {
+  display: none; }
+
+/*-----------------------direg---------------------*/
+/* line 573, index.scss */
+.cao-tan {
+  display: none;
+  height: 99%;
+  background: red;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  background: url(../img/alert_bg.png);
+  background-size: 100% 100%; }
+  /* line 584, index.scss */
+  .cao-tan .x {
+    width: 27px;
+    height: 30px;
+    background: url(../img/close.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 5%;
+    top: 0; }
+  /* line 593, index.scss */
+  .cao-tan p {
+    padding-top: 65%;
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 20px; }
+  /* line 600, index.scss */
+  .cao-tan .an {
+    position: absolute;
+    left: 31%;
+    bottom: 8%;
+    background: url(../img/btn_bg.png);
+    background-size: 100% 100%;
+    width: 110px;
+    height: 40px;
+    color: #b00600;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px; }
+
+/*# sourceMappingURL=index.css.map */
